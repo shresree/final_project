@@ -1,0 +1,137 @@
+
+
+
+
+h1{
+    color: #00b4c5;
+    background: black;
+    font-family: Arial;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    
+}
+h2{
+    color: white;
+    font-family: Times;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    font-size: 30px;
+}
+h3{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-size: 20px;
+    text-align: center;
+}
+body{
+    font-family: Arial, Verdana;
+    background: black;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+p{
+    font-size: 24px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+img{
+    
+    width: 15%;
+    margin: auto;
+    height: 20%;
+    border: white 3px solid;
+    padding: 10px;
+}
+div{
+    min-height: 125px;
+    padding: 10px;
+    word-spacing: double;
+    border: white 3px solid;
+}
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+
+.current_pg{
+    font-style: italic;
+    font-weight: bold;
+}
+.photo.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+}
+
+@media (prefers-reduced-motion: reduce){
+    .gif{
+        display: none;
+    }
+
+}
+
+.zoom-when-hovering{
+    transition: transform 0.5s;
+}
+
+.zoom-when-hovering:hover{
+    transform: scale(1.3);
+}
+
+.zoom-when-hovering:focus{
+    margin-top: 2px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+#comment{
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+.flip-container {
+    perspective: 1000px;
+    border-color: black;
+}
+
+
+
+.flipper {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-color: black;
+}
+
+.front {
+    z-index: 2;
+    border-color: black;
+}
+.back{
+    font-size: 10;
+}
+
+#map{
+    width: 100%;
+    height: 600px;
+    border: none;
+}
